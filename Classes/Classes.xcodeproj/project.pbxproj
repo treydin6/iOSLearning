@@ -10,6 +10,7 @@
 		188930FF24AC2FBD00426900 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188930FE24AC2FBD00426900 /* main.swift */; };
 		1889310624AC302000426900 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1889310524AC302000426900 /* Enemy.swift */; };
 		1889310824AC331D00426900 /* Dragon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1889310724AC331D00426900 /* Dragon.swift */; };
+		18F16A7924AD03E60064FE4A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F16A7824AD03E60064FE4A /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		188930FE24AC2FBD00426900 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1889310524AC302000426900 /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		1889310724AC331D00426900 /* Dragon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dragon.swift; sourceTree = "<group>"; };
+		18F16A7824AD03E60064FE4A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 		188930F224AC2FBD00426900 = {
 			isa = PBXGroup;
 			children = (
+				18F16A7724AD03CE0064FE4A /* Protocols */,
 				188930FD24AC2FBD00426900 /* Classes */,
 				188930FC24AC2FBD00426900 /* Products */,
 			);
@@ -66,6 +69,14 @@
 				1889310524AC302000426900 /* Enemy.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		18F16A7724AD03CE0064FE4A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				18F16A7824AD03E60064FE4A /* main.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +139,7 @@
 			files = (
 				1889310624AC302000426900 /* Enemy.swift in Sources */,
 				188930FF24AC2FBD00426900 /* main.swift in Sources */,
+				18F16A7924AD03E60064FE4A /* main.swift in Sources */,
 				1889310824AC331D00426900 /* Dragon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
