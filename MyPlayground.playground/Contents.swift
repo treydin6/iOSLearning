@@ -42,7 +42,7 @@ var myTown = Town()
 
 print(myTown.citizens)
 print(myTown.citizens[1])
-print(myTown.resources["Grain"])
+//print(myTown.resources["Grain"])
 
 myTown.citizens.append("TreyWay")
 print(myTown.citizens)
@@ -68,3 +68,32 @@ var anotherTown = Town2(name: "Zootopia", people: ["Tom Hanks"], stats: ["Coconu
 print(anotherTown.name)
 var ghostTown = Town2(name: "st g", people: [], stats: ["tumbleWeed": 1000])
 print(ghostTown.citizens)
+
+
+/*
+    optionals
+ */
+let myOptional: String?
+myOptional = "fdg"
+if let safeOptional = myOptional {
+    print(safeOptional)
+} else {
+    print("nil")
+}
+
+let anotherOptional: String?
+//anotherOptional = "ffdshf"
+anotherOptional = nil
+let text: String = anotherOptional ?? "I am the default"
+print(text)
+
+struct AnOptional {
+    var property = 123
+    func method() {
+        print("i am method")
+    }
+}
+
+let anOptional: AnOptional?
+anOptional = anOptional()
+print(anOptional!.property)
