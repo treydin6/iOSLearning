@@ -94,6 +94,76 @@ struct AnOptional {
     }
 }
 
-let anOptional: AnOptional?
-anOptional = anOptional()
-print(anOptional!.property)
+//let anOptional: AnOptional?
+//anOptional = anOptional()
+//print(anOptional!.property)
+
+
+let names = ["Anna", "mark", "trey", "jack"]
+let contacts = ["adam": 123234, "mark": 6721872387, "trey": 4347293]
+for name in names {
+    print(name)
+}
+for i in 0..<10 {
+    print("hello", i)
+}
+for contact in contacts {
+    print(contact.key, contact.value)
+}
+
+var num = 0
+while num < 10 {
+    print("runnig #", num)
+    num += 1
+}
+
+
+// as  upcast
+// as! forced downcast
+// as? optional downcas
+// in
+// any
+
+class Animal {
+    var name: String
+    
+    init(n: String) {
+        name = n
+    }
+}
+
+class Human: Animal {
+    func code() {
+        print("typing away...")
+    }
+}
+
+class Fish: Animal {
+    func breath() {
+        print("breathing under water")
+    }
+}
+
+let ang = Human(n: "angela")
+let jack = Human(n: "jack")
+let nemo = Fish(n: "nemo")
+
+let neighbors = [ang, jack, nemo]
+
+if neighbors[0] is Fish {
+    print("ur human")
+}
+
+func findNemo(from animals: [Animal]) {
+    for animal in animals {
+        if animal is Fish {
+            print(animal.name)
+            let fish = animal as! Fish
+            fish.breath()
+            let animalFish = fish as Animal
+        }
+    }
+}
+
+findNemo(from: neighbors)
+

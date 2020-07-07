@@ -13,6 +13,8 @@
 		18F16A9A24AD54970064FE4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F16A9824AD54970064FE4A /* LaunchScreen.storyboard */; };
 		18F16AA224AD56190064FE4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F16AA124AD56190064FE4A /* Assets.xcassets */; };
 		18F16AA524AD562F0064FE4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F16AA324AD562F0064FE4A /* Main.storyboard */; };
+		18F16AA824AE3C0F0064FE4A /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18F16AA624AE3C0F0064FE4A /* DataModel.xcdatamodeld */; };
+		18F16ACD24AE552E0064FE4A /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F16ACC24AE552E0064FE4A /* CategoryTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		18F16A9B24AD54970064FE4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18F16AA124AD56190064FE4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../../../Downloads/Todoey-iOS13-master/Todoey/Assets.xcassets"; sourceTree = "<group>"; };
 		18F16AA424AD562F0064FE4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../../../Downloads/Todoey-iOS13-master/Todoey/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		18F16AA724AE3C0F0064FE4A /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		18F16ACC24AE552E0064FE4A /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1891B93124AE2BAE0047534A /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				18F16AA624AE3C0F0064FE4A /* DataModel.xcdatamodeld */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		1891B93424AE2C140047534A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18F16AA324AD562F0064FE4A /* Main.storyboard */,
+				18F16A9824AD54970064FE4A /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1891B93524AE2C200047534A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18F16ACC24AE552E0064FE4A /* CategoryTableViewController.swift */,
+				18F16A9124AD54960064FE4A /* TodoListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		18F16A8124AD54960064FE4A = {
 			isa = PBXGroup;
 			children = (
@@ -58,10 +88,10 @@
 			children = (
 				18F16A8D24AD54960064FE4A /* AppDelegate.swift */,
 				18F16A8F24AD54960064FE4A /* SceneDelegate.swift */,
-				18F16A9124AD54960064FE4A /* TodoListViewController.swift */,
-				18F16AA324AD562F0064FE4A /* Main.storyboard */,
+				1891B93424AE2C140047534A /* Views */,
+				1891B93124AE2BAE0047534A /* DataModel */,
+				1891B93524AE2C200047534A /* Controllers */,
 				18F16AA124AD56190064FE4A /* Assets.xcassets */,
-				18F16A9824AD54970064FE4A /* LaunchScreen.storyboard */,
 				18F16A9B24AD54970064FE4A /* Info.plist */,
 			);
 			path = "Git-It-Done";
@@ -138,7 +168,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F16AA824AE3C0F0064FE4A /* DataModel.xcdatamodeld in Sources */,
 				18F16A9224AD54960064FE4A /* TodoListViewController.swift in Sources */,
+				18F16ACD24AE552E0064FE4A /* CategoryTableViewController.swift in Sources */,
 				18F16A8E24AD54960064FE4A /* AppDelegate.swift in Sources */,
 				18F16A9024AD54960064FE4A /* SceneDelegate.swift in Sources */,
 			);
@@ -286,6 +318,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Git-It-Done/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +336,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Git-It-Done/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -336,6 +370,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		18F16AA624AE3C0F0064FE4A /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				18F16AA724AE3C0F0064FE4A /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 18F16AA724AE3C0F0064FE4A /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 18F16A8224AD54960064FE4A /* Project object */;
 }
